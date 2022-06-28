@@ -75,18 +75,20 @@ function prevImage() {
 function interact(command){
     command = command.key;
 
-    console.log(command);
+    hasOpenedImages = document.getElementsByClassName("opened").length > 0;
 
-    if (command === "Escape" || command === " ") {
-        closeImage();        
-    }
-
-    if (command === "ArrowRight"){
-        nextImage();
-    }
-
-    if (command === "ArrowLeft"){
-        prevImage();
+    if (hasOpenedImages){
+        if (command === "Escape" || command === " ") {
+            closeImage();        
+        }
+        
+        if (command === "ArrowRight"){
+            nextImage();
+        }
+        
+        if (command === "ArrowLeft"){
+            prevImage();
+        }
     }
 }
 
