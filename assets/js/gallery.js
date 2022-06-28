@@ -31,7 +31,10 @@ function setOpenedImage(imageObject){
 function closeImage() {
     document.getElementById("opened-area").style.display = "none";
     document.getElementById("opened-area").innerHTML = `
-            <section id="opened-image"></section>
+        <button onclick="closeImage()">X</button>
+        <section id="opened-image"></section>
+        <button onclick="nextImage()">Anterior</button>
+        <button onclick="prevImage()">Proxima</button>
     `
 }
 
