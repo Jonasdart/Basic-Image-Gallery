@@ -18,6 +18,14 @@
     margin-top: 10px;
 }
 
+figcaption {
+    display: none;
+}
+
+figure:hover figcaption{
+    display: inline;
+}
+
 .opened {
     height: 500px;
     width: 700px;
